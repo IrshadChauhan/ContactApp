@@ -45,7 +45,7 @@ router.get('/contact',async(req,res)=>{
 
 router.get('/allContact',async (req,res)=>{
   try {
-    const user = await User.find()
+    const user = await User.find().sort({name:1})
     res.status(200).send(user)
   } catch (error) {
     res.status(400).send(error)
