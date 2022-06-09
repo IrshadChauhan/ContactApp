@@ -1,4 +1,4 @@
-const User = require("../../models/user")
+const User = require("../models/user")
 const sharp = require('sharp')
 
 const createContact=async (req,res)=>{

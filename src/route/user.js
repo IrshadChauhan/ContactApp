@@ -1,7 +1,7 @@
 const express = require('express')
 const multer  = require('multer')
 
-const { createContact, getContact, getAllContact, updateContact, uploadProfileImage, deleteProfileImage, deleteContact } = require('../db/controllers/user.js')
+const { createContact, getContact, getAllContact, updateContact, uploadProfileImage, deleteProfileImage, deleteContact } = require('../controllers/user')
 
 const User = require('../models/user.js')
 
